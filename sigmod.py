@@ -4,4 +4,5 @@ def basic_sigmoid(x):
     return 1 / (1 + np.exp(-x))
 
 def sigmoid_derivative(x):
-    return x * (1 - x)
+    s = basic_sigmoid(x)
+    return s * (1 - s)
